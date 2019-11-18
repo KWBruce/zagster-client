@@ -1,5 +1,4 @@
-
-const BASE_URL = "https://zagster-service.herokuapp.com/rides/locations_and_times"
+const BASE_URL = "https://zagster-service.herokuapp.com"
 
 $(updateView)
 
