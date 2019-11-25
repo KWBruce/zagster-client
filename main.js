@@ -10,3 +10,8 @@ function updateRideCount(data) {
   numberOfRides = data.count
   $("h2#rideCount").html("Total Rides:" + numberOfRides)
 }
+
+function updateView() {
+  
+
+}
