@@ -46,8 +46,6 @@ function updateView() {
     ).then(updateChart);  
 }
 
-
-
 function perYear(data){
     for (var index = 0, month=9; index <= 3, month<=12; ++index, ++month){
         months2016.push(data[2016] [index] [month])    
