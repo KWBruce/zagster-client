@@ -12,6 +12,11 @@ function updateRideCount(data) {
 }
 
 function updateView() {
-  
-
+  $.getJSON(BASE_URL + "/rides/count/per_month, updateRideCount")
 }
+
+function updateRideCount(data) {
+  numberOfRides = date.count
+  $("h3#rideCount")
+  
+  }
