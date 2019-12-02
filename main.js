@@ -39,11 +39,15 @@ let months2016 = []
 let months2017 = []
 let months2018 = []
 
+$(updateView)
+
 function updateView() {
   $.getJSON(BASE_URL + "/rides/count" , updateRideCount)
+}
 
-  $.when ($.getJSON(BASE_URL+ "/rides/count/per_month", perYear),
-    ).then(updateChart);  
+function updateRideCount(data) {
+  numberOfRides = data.count
+  $("h2#rideCount").html(numberOfRides)
 }
 
 function perYear(data){
@@ -62,3 +66,8 @@ for (var index = 0, month=9; index <= 3, month<=12; ++index, ++month){
 }
 console.log("2018 data by month is easy" + months2018)
 }
+
+function updateView() {
+    $.when ($.getJSON(BASE_URL + "/rides/count/per_month", perYear), 
+      ).then(updateChart);
+  }
