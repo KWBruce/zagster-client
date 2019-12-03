@@ -1,7 +1,8 @@
-const BASE_URL = "https://zagster-service.herokuapp.com"
-const PI = 3.14
 
-add(2,3);
+
+
+  
+  add(2,3);
 
 
 function add(num1, num2){
@@ -32,23 +33,11 @@ console.log(year_list[0][9])
 console.log(year_list[1][10])
 console.log(year_list[2][11])
 console.log(year_list[3][12])
-// $(updateView)
 
 let years = []
 let months2016 = []
 let months2017 = []
 let months2018 = []
-
-$(updateView)
-
-function updateView() {
-  $.getJSON(BASE_URL + "/rides/count" , updateRideCount)
-}
-
-function updateRideCount(data) {
-  numberOfRides = data.count
-  $("h2#rideCount").html(numberOfRides)
-}
 
 function perYear(data){
     for (var index = 0, month=9; index <= 3, month<=12; ++index, ++month){
@@ -66,8 +55,3 @@ for (var index = 0, month=9; index <= 3, month<=12; ++index, ++month){
 }
 console.log("2018 data by month is easy" + months2018)
 }
-
-function updateView() {
-    $.when ($.getJSON(BASE_URL + "/rides/count/per_month", perYear), 
-      ).then(updateChart);
-  }

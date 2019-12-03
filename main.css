@@ -1,11 +1,12 @@
 
 body {
     font-family: "HelveticaNeue", "Arial", sans-serif;
+    background-color : gold
   }
 h1 {
-    color: green
+    color: black
 }
 h2 {
     font-size: 2em; 
-    color: brown
+    color: black
 }
