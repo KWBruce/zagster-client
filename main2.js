@@ -56,7 +56,7 @@ function perYear(data) {
 function updateChart() {
     var ctx = document.getElementById('myChart').getContext('2d');
     var chart = new Chart(ctx, {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',],
             datasets: [{
