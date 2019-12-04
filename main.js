@@ -1,8 +1,4 @@
-
-
-
-  
-  add(2,3);
+ add(2,3);
 
 
 function add(num1, num2){
